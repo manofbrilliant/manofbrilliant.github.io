@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#0056b3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="careercraft.css">
+</head>
+<body>
+ <div>
+    <div id="preloader">
+        <img src="img/logo.png" alt="Loading..." />
+    </div>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="">Projects</a></li>
+        </ul>
+
+        <h1>Yadlapalli Phanindra</h1>
+        <img src="img/logo.png" alt="Logo">
+    </nav>
+</div>
+
+
+    <div>
+         <div id="outer">
+            <div class="inner">
+                <br>
+                 <h1>CareerCraft</h1>
+                 <div class="innerbox">
+                    <br>
+                          <h2 id="des">Description</h2>
+                          <p>
+                            CareerCraft is a comprehensive web application designed to help users 
+                            craft their career journey effectively. This platform offers tools and resources
+                             like a resume builder, cover letter builder, career guidance, a curated list of companies, 
+                             and a job-specific chatbot.
+                          </p>
+                          <hr>
+                          <h2 id="des">Servies & Features</h2>
+                          <ul>
+                            <p><li><b>Resume builder</b></li> : Create professional and customizable resumes effortlessly.</p>
+                            <p><li><b>Cover letter builder</b></li> : Generate personalized cover letters tailored to specific job applications.</p>
+                            <p><li><b>Career guidance</b></li> : Get insights and tips for shaping your career path.</p>
+                            <p><li><b>Companies list</b></li> : Explore a curated list of companies to aid your job search.</p>
+                            <p><li><b>Job Specific chatbot</b></li> : Interact with an intelligent chatbot to get job-specific advice and answers.</p>
+                          </ul>
+                          <hr>
+                 </div>
+            </div>
+         </div>
+        
+
+    </div>
+    
+  
+     
+
+    <script src="careercraft.js"></script>
+
+    <script>
+      // Preloader Script
+window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+
+    // Set the timeout duration (in milliseconds)
+    setTimeout(() => {
+        preloader.style.display = "none"; // Hide the preloader
+    }, 1000); // 3000ms = 3 seconds
+});
+
+    </script>
+ 
+
+</body>
+</html>

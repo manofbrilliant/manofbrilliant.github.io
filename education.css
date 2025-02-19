@@ -1,0 +1,231 @@
+/* CSS for the Portfolio Page */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Background color of the preloader */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it stays above all other elements */
+}
+
+#preloader img {
+    height: 150px; /* Adjust logo size */
+    animation: spin 2s linear infinite; /* Optional: Add a spin animation */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+@font-face {
+    font-family: 'CustomFont'; /* Choose a name for your font */
+    src: url('fonts/Product\ Sans\ Regular.ttf') format('truetype'); /* Path to your .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Heading'; /* Choose a name for your font */
+    src: url('fonts/PlaywriteAUSA-VariableFont_wght.ttf') format('truetype'); /* Path to your .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 6px; /* Adjusted for fixed navbar */
+    background-color: #f4f4f4;
+}
+
+/* Navbar Container */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #333;
+    padding: 11px 0;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+/* Fixed Navbar */
+nav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Menu List */
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+    color: #333;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+    color: blue;
+}
+
+/* Logo */
+nav img {
+    height: 66px;
+    object-fit: contain;
+}
+
+nav h1{
+    margin-left: 866px;
+    font-family: 'Heading', sans-serif;
+    font-size: 20px; /* Adjust size as needed */
+    white-space: nowrap; /* Keeps text on one line */
+    overflow: hidden; /* Hides overflow if it exists */
+    text-overflow: ellipsis;
+}
+nav h1:hover{
+    color: #007bff;
+
+}
+
+
+
+.roadmap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 50px auto;
+  padding: 0 20px;
+  max-width: 800px;
+}
+
+.milestone {
+  position: relative;
+  width: 100%;
+  margin: 30px 0;
+}
+li a{
+  text-decoration: none;
+  color: inherit; 
+}
+.milestone::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 100%;
+  background: #0077ff;
+}
+
+.milestone .content {
+  position: relative;
+  width: 45%;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.milestone:nth-child(odd) .content {
+  margin-left: auto;
+  text-align: right;
+}
+
+.milestone:nth-child(even) .content {
+  margin-right: auto;
+}
+
+.milestone .content h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #0077ff;
+}
+
+.milestone .content p {
+  margin: 10px 0 0;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.milestone .content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.milestone .image {
+  position: absolute;
+  top: 41%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 2;
+  width: 300px;
+  height: 200px;
+}
+
+.milestone .image img {
+  width: 500px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  
+}
+
+/* Show image on hover */
+.milestone:hover .image {
+  display: block;
+}
+
+
+.social-media-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-icons svg {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-media-icons svg:hover {
+  transform: scale(1.2);
+  color: #007bff;
+
+}
+

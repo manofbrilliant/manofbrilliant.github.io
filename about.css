@@ -1,0 +1,278 @@
+/* CSS for the Portfolio Page */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Background color of the preloader */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it stays above all other elements */
+}
+
+#preloader img {
+    height: 150px; /* Adjust logo size */
+    animation: spin 2s linear infinite; /* Optional: Add a spin animation */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+@font-face {
+    font-family: 'CustomFont'; /* Choose a name for your font */
+    src: url('fonts/Product\ Sans\ Regular.ttf') format('truetype'); /* Path to your .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Heading'; /* Choose a name for your font */
+    src: url('fonts/PlaywriteAUSA-VariableFont_wght.ttf') format('truetype'); /* Path to your .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 6px; /* Adjusted for fixed navbar */
+}
+
+/* Navbar Container */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #333;
+    padding: 11px 0;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+/* Fixed Navbar */
+nav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Menu List */
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+    color: #333;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+    color: blue;
+}
+
+/* Logo */
+nav img {
+    height: 66px;
+    object-fit: contain;
+}
+
+nav h1{
+    margin-left: 866px;
+    font-family: 'Heading', sans-serif;
+    font-size: 20px; /* Adjust size as needed */
+    white-space: nowrap; /* Keeps text on one line */
+    overflow: hidden; /* Hides overflow if it exists */
+    text-overflow: ellipsis;
+}
+nav h1:hover{
+    color: #007bff;
+
+}
+/* Curved Box */
+.curved-box {
+    width: 1400px;
+    height: 1025px;
+    background-color: #f4f4f4;
+    color: black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.9;
+    padding: 2px;
+    margin: 50px auto;
+}
+/* Ensure only the `typing-effect` class gets the animation */
+
+
+h1 {
+    font-family: 'Arial', sans-serif; /* Clean and professional font */
+    font-size: 2.5rem; /* Emphasized size */
+    font-weight: bold;
+    color: #333; /* Bold, neutral color */
+    text-align: center; /* Center aligns the title */
+    margin-bottom: 0; /* Remove extra spacing below the title */
+}     
+
+
+
+
+/* Typing Animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+
+.curved-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 1599px;
+}
+
+.curved-box h1{
+    font-size: 66px;
+    margin-bottom: 1680px;
+    margin-left: 50px;
+    font-family: 'Heading', sans-serif;
+}
+/* Typing Animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.curved-box {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align the content */
+}
+
+.curved-box img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px; /* Add space below the image */
+    margin-top: 22px;
+}
+
+.curved-box h1 {
+    font-size: 36px;
+    margin-bottom: 20px; /* Add space below the heading */
+    text-align: center; /* Center-align the heading */
+    font-family: 'Heading', sans-serif;
+    color: #333;
+}
+
+.curved-box p {
+    font-size: 20px; /* Adjust font size */
+    line-height: 1.6; /* Improve readability */
+    color: #555; /* Softer text color */
+    text-align: justify; /* Justify the text for a clean appearance */
+    padding: 20px; /* Add padding around the text */
+    margin: 0 20px 20px; /* Add space around the paragraph */
+    border-radius: 10px; /* Rounded corners for modern design */
+    width: calc(100% - 40px); /* Ensure it stays within the container */
+}
+
+li a{
+    text-decoration: none;
+    color: inherit; 
+}
+
+.curved-box ul{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    margin: 0;
+}
+.curved-box ul li{
+    margin-right: 20px;
+    color: #333;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+.curved-box ul li:hover{
+    color:#007bff;
+}
+.curved-box h1:hover{
+    color:purple;
+}
+
+.social-media-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-icons svg {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-media-icons svg:hover {
+    transform: scale(1.2);
+    color: #007bff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

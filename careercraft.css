@@ -1,0 +1,168 @@
+/* CSS for the Portfolio Page */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Background color of the preloader */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it stays above all other elements */
+}
+
+#preloader img {
+    height: 150px; /* Adjust logo size */
+    animation: spin 2s linear infinite; /* Optional: Add a spin animation */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+@font-face {
+    font-family: 'CustomFont'; /* Choose a name for your font */
+    src: url('fonts/Product\ Sans\ Regular.ttf') format('truetype'); /* Path to your .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Heading'; /* Choose a name for your font */
+    src: url('fonts/PlaywriteAUSA-VariableFont_wght.ttf') format('truetype'); /* Path to your .ttf file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 6px; /* Adjusted for fixed navbar */
+    background-color: #f4f4f4;
+}
+
+/* Navbar Container */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #333;
+    padding: 11px 0;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+/* Fixed Navbar */
+nav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Menu List */
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+    color: #333;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+    color: blue;
+}
+
+/* Logo */
+nav img {
+    height: 66px;
+    object-fit: contain;
+}
+
+nav h1{
+    margin-left: 866px;
+    font-family: 'Heading', sans-serif;
+    font-size: 20px; /* Adjust size as needed */
+    white-space: nowrap; /* Keeps text on one line */
+    overflow: hidden; /* Hides overflow if it exists */
+    text-overflow: ellipsis;
+}
+nav h1:hover{
+    color: #007bff;
+
+}
+
+#outer{
+ background-color: white;
+ border-radius: 10px;
+ margin-top: 50px;
+ margin-left: 100px;
+ width: 1390px;
+ height: 999px;
+ align-items: center;
+}
+
+li a{
+    text-decoration: none;
+    color: inherit; 
+}
+
+.inner h1{
+    font-family: 'CustomFont', sans-serif;
+    margin-left: 30px;
+    font-size: 40px;
+}
+.inner h1:hover{
+    color:#007bff;
+}
+
+.innerbox{
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    align-items: center;
+    margin-left: 100px;
+    width: 1200px;
+    height: 900px;
+    border-color: #333;
+ text-align: left;
+ justify-content: flex-start;
+}
+#des{
+    margin-left: 10px;
+    font-size: 26px;
+    padding-left: 22px;
+}
+.innerbox p{
+    font-size: 22px;
+    padding-right: 100px;
+    padding-left: 22px;
+}
+.innerbox ul{
+    font-size: 22px;
+    padding-right: 100px;
+    padding-left: 50px;
+}
